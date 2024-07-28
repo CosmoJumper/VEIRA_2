@@ -1,0 +1,147 @@
+<!DOCTYPE html> 
+<html lang="ru">
+	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+
+	<script src="js/category-menu-scroll.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/basement.css">
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
+	<link rel="stylesheet" type="text/css" href="css/menu-panel.css">
+	<link rel="stylesheet" type="text/css" href="css/order.css">
+	<link rel="stylesheet" type="text/css" href="css/scrollbar.css">
+
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;900&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/inputmask.min.js"></script>
+
+	<title>Заказ</title>
+	</head>
+	<body>
+
+		<div class="trigger-1"></div>
+
+		<div class="menu-panel">
+		<img src="images/menu-base.png" class="menu-base" id="menu-base">
+		<a href="#"><img src="images/logo veira white.png" class="logo-menu"></a>
+		<img src="images/burger.png" id="button-burger" class="burger-menu">
+		</div>
+
+		<div class="menu-open">
+		<div class="text-area-menu">
+			<p class="navigation-menu-element"><a href="#">С бактериофагами</a></p>
+			<p class="navigation-menu-element"><a href="#">С АСД</a></p>
+			<p class="navigation-menu-element"><a href="#">Гигиена и профилактика</a></p>
+			<p class="navigation-menu-element"><a href="#">Приомин</a></p>
+			<p class="navigation-menu-element"><a href="#">Косметика</a></p>
+			<p class="navigation-menu-element"><a href="#">Функциональные продукты</a></p>
+			<p class="navigation-menu-element"><a href="#">Программа Veira Slim</a></p>
+			<p class="navigation-menu-element"><a href="#">Уход за домом и садом</a></p>
+			<p class="navigation-menu-element"><a href="#">Печатная продукция</a></p>
+			<p class="navigation-menu-element"><a href="#">Наборы</a></p>
+		</div>
+	</div>
+
+		<div class="navigation-panel-bottom">
+		<div>
+		<a href="index.html"><img src="images/icon-home.png" data-page="index" id="icon-home"></a>
+		<a href="catalog.html"><img src="images/icon-find.png" data-page="catalog" id="icon-find"></a>
+		<a href="corzine.html"><img src="images/icon-market.png" data-page="corzine" id="icon-market"></a>
+		<a href="profile.html"><img src="images/icon-cabinet.png" data-page="cabinet" id="icon-cabinet"></a>
+		</div>
+		</div>
+
+		<form id="orderForm" class="order-form">
+			<h1>Ваши товары:</h1>
+			<div class="products-container">
+				<div class="product"><p id="productName" class="product-name">Спрей с бактериофагами</p><p id="q" class="q">
+				x1</p><button id="deleteProduct" class="delete-product">убрать</button></div>
+
+			</div>
+			<h1 class="receiving-label">Получение:</h1>
+
+				<div class="receiving-container"><input type="radio" id="delivery-receiving" name="receiving" checked><p>Доставка КазПочтой</p></div>
+				<div class="receiving-container"><input type="radio" id="pickup-receiving" name="receiving" ><span class="radiomark"></span><p>Самовывоз</p></div>
+
+				<div class="delivery-form" id="deliveryForm">
+					<label for="name">ФИО получателя</label>
+					<input type="input" name="name" id="name" autocomplete="name" maxlength="30">
+
+					<label for="address-level1">Область</label>
+					<input type="input" name="address-level1" id="address-level1" autocomplete="address-level1" maxlength="30">
+
+					<label for="address-level2">Город</label>
+					<input type="input" name="address-level2" id="address-level2" autocomplete="address-level2" maxlength="20"> 
+
+					<label for="name">Почтовый индекс</label>
+					<input type="input" name="postal-code" id="postal-code" autocomplete="postal-code" maxlength="10">
+
+					<label for="tel">Номер телефона</label>
+					<input type="input" name="tel" id="tel" autocomplete="tel">
+				</div>
+
+				<div class="contact-form" id="contactForm">
+					<label for="given-name">Имя</label>
+					<input type="input" name="given-name" id="given-name" autocomplete="given-name" maxlength="30">
+
+					<label for="tel-1">Номер телефона</label>
+					<input type="input" name="tel" id="tel-1" autocomplete="tel">
+				</div>
+
+				<h1>Оплата:</h1>
+
+				<div class="pay-type-container">
+					<button type="button" class="online-pay radio-button" id="onlinePayButton"><img src="images/online-icon.png"><p class="online-pay-p">Онлайн</p></button>
+					<button type="button" class="offline-pay radio-button" id="offlinePayButton"><img src="images/offline-icon.png"><p class="offline-pay-p">При получении</p></button>
+				</div>
+					
+
+			<button type="submit" class="order-button" id="orderButton">ЗАКАЗАТЬ</button>
+		</form>
+
+		<div class="basement">
+
+					<img src="images/logo veira.png">
+
+					<div class="text-area-basement">
+						<p class="number-basement">+7 702 532 8122</p>
+						<p class="adress-basement">​БЦ Деловой Дом​ Проспект Нурсултана Назарбаева, 16​ 115 офис; 1 этаж</p>
+						<div class="navigation-basement">
+							<p class="navigation-text-basement"><a href="#">Главная</a></p>
+							<p class="navigation-text-basement"><a href="#">Наборы</a></p>
+							<p class="navigation-text-basement"><a href="#">С бактериофагами</a></p>
+							<p class="navigation-text-basement"><a href="#">С АСД</a></p>
+							<p class="navigation-text-basement"><a href="#">Гигиена и профилактика</a></p>
+							<p class="navigation-text-basement"><a href="#">Косметика для лица</a></p>
+							<p class="navigation-text-basement"><a href="#">Уход за телом</a></p>
+							<p class="navigation-text-basement"><a href="#">Средства для волос</a></p>
+							<p class="navigation-text-basement"><a href="#">Микробиомное желе</a></p>
+							<p class="navigation-text-basement"><a href="#">Концентраты напитков</a></p>
+							<p class="navigation-text-basement"><a href="#">Витамины и минералы</a></p>
+							<p class="navigation-text-basement"><a href="#">Каши и супы</a></p>
+							<p class="navigation-text-basement"><a href="#">Программа Veira Slim</a></p>
+							<p class="navigation-text-basement"><a href="#">Для дома и сада</a></p>
+							<p class="navigation-text-basement"></p>
+							<p class="navigation-text-basement"><a href="#">О компании</a></p>
+						</div>
+					</div>
+
+				</div>
+
+		<script src="js/menu.js"></script>
+		<script src="js/order-form.js"></script>
+	</body>
+	</html>

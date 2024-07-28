@@ -1,0 +1,180 @@
+html {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body {
+	background-color: white;
+	width: 100vw;
+	overflow-x: hidden;
+	font-family: Montserrat;
+	text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+h2 {
+    color: #008E95;
+}
+
+button {
+    border-radius: 30px;
+    background-color: #008E95;
+    color: white;
+    width: 50%;
+    height: 60px;
+    border: none;
+    margin-top: 30px;
+}
+
+.find-container {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    background-color: #008E95;
+}
+
+.find-container h2 {
+    color: white;
+}
+
+.find-container button {
+    color: #008E95;
+    background-color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+input {
+    width: 80%;
+    height: 60px;
+    border: solid;
+    border-color: #008E95;
+    border-width: 3px;
+    border-radius: 60px;
+    padding-left: 20px;
+    color: #008E95;
+    font-size: 24px;
+    font-family: Montserrat;
+}
+
+.categories-container {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.category {
+    width: 100%;
+    height: 200px;
+    color: #008E95;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: row;
+}
+
+.text-container {
+    float: left;
+    margin-left: 30px;
+    width: 50%;
+    overflow-wrap: break-word;
+    text-align: left;
+    margin-top: 0;
+    margin-right: 10px;
+}
+
+.text-container button {
+    width: 100%;
+}
+
+.category-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 70%;
+
+}
+
+.category-image-container img {
+   margin-top: auto;
+   margin-bottom: auto;
+   height: 100%;
+}
+
+@media(min-width: 1200px) {
+    .find-container {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    background-color: #008E95;
+}
+
+.find-container h2 {
+    color: white;
+}
+
+.find-container button {
+    color: #008E95;
+    background-color: white;
+    width: 30%;
+}
+
+.categories-container {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.category {
+    width: 80%;
+    height: 300px;
+    color: #008E95;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.text-container {
+    float: left;
+    margin-left: 30px;
+    width: 50%;
+    overflow-wrap: break-word;
+    text-align: left;
+    margin-top: 0;
+    margin-right: 10px;
+}
+
+.text-container button {
+    width: 100%;
+}
+
+.category-image-container img {
+   margin-top: auto;
+   margin-bottom: auto;
+   height: 100%;
+   width: auto;
+}
+
+
+}

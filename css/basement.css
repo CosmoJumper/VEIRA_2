@@ -1,0 +1,44 @@
+.basement {
+	width: 100%;
+	background-color: #EEEEEE;
+	margin-bottom: 0;
+	position: relative;
+	margin-top: 60px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.basement img {
+	width: 70%;
+}
+
+.text-area-basement {
+	width: 70%;
+	overflow-wrap: break-word;
+	color: #008E95;
+	margin-top: 30px;
+}
+
+.number-basement {
+	font-weight: bold;
+}
+
+
+
+.navigation-text-basement {
+	font-weight: bold;
+}
+
+.navigation-text-basement a {
+	text-decoration: none;
+    color: #008E95;
+}
+
+@media(min-width: 1200px) {
+	.basement img {
+	width: 30%;
+}
+}

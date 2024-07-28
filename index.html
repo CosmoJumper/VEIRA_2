@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script src="js/script.js"></script>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/basement.css">
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
+	<link rel="stylesheet" type="text/css" href="css/menu-panel.css">
+	<link rel="stylesheet" type="text/css" href="css/scrollbar.css">
+
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;900&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/inputmask.min.js"></script>
+
+	<title>Veira</title>
+
+</head>
+<body>
+	<div class="trigger-1"></div>
+	<div class="trigger-2"></div>
+	<div class="trigger-3"></div>
+	<div class="trigger-4"></div>
+
+	<img src="images/logo veira.png" class="logo">
+
+	<div class="menu-panel">
+		<img src="images/menu-base.png" class="menu-base" id="menu-base">
+		<a href="#"><img src="images/logo veira white.png" class="logo-menu"></a>
+		<img src="images/burger.png" id="button-burger" class="burger-menu">
+	</div>
+
+	<div class="navigation-panel-bottom">
+		<div>
+			<a href="index.html"><img src="images/icon-home.png" data-page="index" id="icon-home"></a>
+			<a href="catalog.html"><img src="images/icon-find.png" data-page="catalog" id="icon-find"></a>
+			<a href="corzine.html"><img src="images/icon-market.png" data-page="corzine" id="icon-market"></a>
+			<a href="profile.html"><img src="images/icon-cabinet.png" data-page="cabinet" id="icon-cabinet"></a>
+		</div>
+	</div>
+
+	<div class="menu-open">
+		<div class="text-area-menu">
+			<p class="navigation-menu-element"><a href="#">С бактериофагами</a></p>
+			<p class="navigation-menu-element"><a href="#">С АСД</a></p>
+			<p class="navigation-menu-element"><a href="#">Гигиена и профилактика</a></p>
+			<p class="navigation-menu-element"><a href="#">Приомин</a></p>
+			<p class="navigation-menu-element"><a href="#">Косметика</a></p>
+			<p class="navigation-menu-element"><a href="#">Функциональные продукты</a></p>
+			<p class="navigation-menu-element"><a href="#">Программа Veira Slim</a></p>
+			<p class="navigation-menu-element"><a href="#">Уход за домом и садом</a></p>
+			<p class="navigation-menu-element"><a href="#">Печатная продукция</a></p>
+			<p class="navigation-menu-element"><a href="#">Наборы</a></p>
+		</div>
+	</div>
+
+	<div class="spray-container">
+		<img src="images/колпачок.png" class="colp">
+		<img src="images/спрей.png" class="spray">
+	</div>
+
+	<div class="main">
+
+		<div class="our-phone">
+			<h3>+7 (702) 532 81 22</h3>
+		</div>
+
+		<div class="work-time">
+			<p>Пн-Пт с 10.00 до 20.00 <br>Сб,Вс выходной</p>
+		</div>
+
+		<div class="about-us">
+			<a href="about-us.html"><p>О компании</p></a>
+		</div>
+		
+
+
+		<div class="new">
+			<h1>Акции и события</h1>
+		</div>
+
+		<div class="promotions-carousel">
+			<div class="promotions-track">
+				<div class="promotions-item">
+					<a href="article.html"><img src="https://marketplace.canva.com/EAEe2vtE-Cs/1/0/1600w/canva-%D0%BF%D1%83%D1%82%D0%B5%D1%88%D0%B5%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5-%D1%82%D0%B5%D0%BA%D1%81%D1%82-%D0%BA%D0%B8%D1%81%D1%82%D1%8C%D1%8E-%D1%84%D0%BE%D1%82%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D1%8F-facebook-%D0%BE%D0%B1%D0%BB%D0%BE%D0%B6%D0%BA%D0%B0-GYo0pGnijBg.jpg"></a>
+				</div>
+				<div class="promotions-item">
+					<a href="article.html"><img src="https://marketplace.canva.com/EAEe2vtE-Cs/1/0/1600w/canva-%D0%BF%D1%83%D1%82%D0%B5%D1%88%D0%B5%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5-%D1%82%D0%B5%D0%BA%D1%81%D1%82-%D0%BA%D0%B8%D1%81%D1%82%D1%8C%D1%8E-%D1%84%D0%BE%D1%82%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D1%8F-facebook-%D0%BE%D0%B1%D0%BB%D0%BE%D0%B6%D0%BA%D0%B0-GYo0pGnijBg.jpg"></a>
+				</div>
+				<div class="promotions-item">
+					<a href="article.html"><img src="https://marketplace.canva.com/EAEe2vtE-Cs/1/0/1600w/canva-%D0%BF%D1%83%D1%82%D0%B5%D1%88%D0%B5%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5-%D1%82%D0%B5%D0%BA%D1%81%D1%82-%D0%BA%D0%B8%D1%81%D1%82%D1%8C%D1%8E-%D1%84%D0%BE%D1%82%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D1%8F-facebook-%D0%BE%D0%B1%D0%BB%D0%BE%D0%B6%D0%BA%D0%B0-GYo0pGnijBg.jpg"></a>
+				</div>
+			</div>
+			<div class="promotions-nav">
+				<button class="promotions-prev">❮</button>
+				<button class="promotions-next">❯</button>
+			</div>
+		</div>
+
+		<div class="new">
+			<h1>Новинки</h1>
+		</div>
+
+		<div class="new-products-container">
+
+			<div class="new-product"><a href="product.html"><img src="https://www.veira.net/int/files/29052412415533img" alt="Product 3"></a>
+				<div class="name-container">
+					<a href="product.html"><h6>Концентрат для приготовления белкового коктейля «Протеиновый кофе»</h6></a>
+				</div>
+				<h3 class="coast">1000 тг</h3>
+				<button class="buy-button"><a href="product.html"><h3>Купить</h3></a></button>
+				<button class="loyalty-button" id="loyaltyButton"><h3>Карта лояльности</h3></button>
+			</div>
+
+			<div class="new-product"><a href="product.html"><img src="https://www.veira.net/int/files/29052412415533img" alt="Product 3"></a>
+				<div class="name-container">
+					<a href="product.html"><h6>Концентрат для приготовления белкового коктейля «Протеиновый кофе»</h6></a>
+				</div>
+				<h3 class="coast">1000 тг</h3>
+				<button class="buy-button"><a href="product.html"><h3>Купить</h3></a></button>
+				<button class="loyalty-button" id="loyaltyButton"><h3>Карта лояльности</h3></button>
+			</div>
+
+			<div class="new-product"><a href="product.html"><img src="https://www.veira.net/int/files/29052412415533img" alt="Product 3"></a>
+				<div class="name-container">
+					<a href="product.html"><h6>Концентрат для приготовления белкового коктейля «Протеиновый кофе»</h6></a>
+				</div>
+				<h3 class="coast">1000 тг</h3>
+				<button class="buy-button"><a href="product.html"><h3>Купить</h3></a></button>
+				<button class="loyalty-button" id="loyaltyButton"><h3>Карта лояльности</h3></button>
+			</div>
+
+			
+
+		</div>
+
+		<div class="carousel-wrapper">
+			<div class="carousel">
+				<div class="carousel-track">
+					<div class="carousel-item">
+						<img src="https://www.veira.net/int/files/29052412415533img" alt="Product 3">
+						<div class="name-container">
+							<h3>Концентрат для приготовления белкового коктейля «Протеиновый кофе»</h3>
+						</div>
+						<h3 class="coast">1000 тг</h3>
+						<button class="buy-button"><h3>Купить</h3></button>
+						<button class="loyalty-button"><h3>Карта лояльности</h3></button>
+					</div>
+					<div class="carousel-item">
+						<img src="https://www.veira.net/int/files/29052412415533img" alt="Product 3">
+						<div class="name-container">
+							<h3>Концентрат для приготовления белкового коктейля «Протеиновый кофе»</h3>
+						</div>
+						<h3 class="coast">1000 тг</h3>
+						<button class="buy-button"><h3>Купить</h3></button>
+						<button class="loyalty-button"><h3>Карта лояльности</h3></button>
+					</div>
+					<div class="carousel-item">
+						<img src="https://www.veira.net/int/files/29052412415533img" alt="Product 3">
+						<div class="name-container">
+							<h3>Концентрат для приготовления белкового коктейля «Протеиновый кофе»</h3>
+						</div>
+						<h3 class="coast">1000 тг</h3>
+						<button class="buy-button"><h3>Купить</h3></button>
+						<button class="loyalty-button"><h3>Карта лояльности</h3></button>
+					</div>
+					<!-- Добавьте больше элементов по необходимости -->
+				</div>
+				<div class="carousel-nav">
+					<button class="prev">❮</button>
+					<button class="next">❯</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="something-else">
+			<div class="something-block">
+				<a href="article.html"><img src="https://marketplace.canva.com/EAEe2vtE-Cs/1/0/1600w/canva-%D0%BF%D1%83%D1%82%D0%B5%D1%88%D0%B5%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5-%D1%82%D0%B5%D0%BA%D1%81%D1%82-%D0%BA%D0%B8%D1%81%D1%82%D1%8C%D1%8E-%D1%84%D0%BE%D1%82%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D1%8F-facebook-%D0%BE%D0%B1%D0%BB%D0%BE%D0%B6%D0%BA%D0%B0-GYo0pGnijBg.jpg">
+				<div class="name-container">
+					<p>Спреи с бактериофагами. Наши бессменные хиты с 2007 года. Нормализуют микрофлору кожи и слизистых. Уничтожают болезнетворные бактерии.</p></div>
+				</div></a>
+				<div class="trigger-5"></div>
+				<div class="something-block">
+					<a href="article.html"><img src="https://marketplace.canva.com/EAEe2vtE-Cs/1/0/1600w/canva-%D0%BF%D1%83%D1%82%D0%B5%D1%88%D0%B5%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5-%D1%82%D0%B5%D0%BA%D1%81%D1%82-%D0%BA%D0%B8%D1%81%D1%82%D1%8C%D1%8E-%D1%84%D0%BE%D1%82%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D1%8F-facebook-%D0%BE%D0%B1%D0%BB%D0%BE%D0%B6%D0%BA%D0%B0-GYo0pGnijBg.jpg">
+					<div class="name-container">
+						<p>Спреи с бактериофагами. Наши бессменные хиты с 2007 года. Нормализуют микрофлору кожи и слизистых. Уничтожают болезнетворные бактерии.</p></div>
+					</div></a>
+				</div>
+
+				<div class="hits">
+					<h1 class="hits-label">ХИТЫ ПРОДАЖ</h1>
+				</div>
+
+				<div class="hits-2">
+					<h1 class="hits-label-2">ХИТЫ ПРОДАЖ</h1>
+				</div>
+
+				
+
+				<div class="trigger-7"></div>
+
+
+
+				<div class="hits-container-desktop">
+
+					<div class="hit-product"><a href="product.html"><img src="https://www.veira.net/int/files/29052412415533img" alt="Product 3"></a><div class="name-container">
+						<a href="product.html"><h6>Концентрат для приготовления белкового коктейля «Протеиновый кофе»</h6></a>
+					</div>
+					<h3 class="coast">1000 тг</h3>
+					<button class="buy-button-hit"><a href="product.html"><h3>Купить</h3></a></button>
+					<button class="loyalty-button"><h3>Карта лояльности</h3></button>
+				</div>
+
+				<div class="hit-product"><a href="product.html"><img src="https://www.veira.net/int/files/29052412415533img" alt="Product 3"></a><div class="name-container">
+						<a href="product.html"><h6>Концентрат для приготовления белкового коктейля «Протеиновый кофе»</h6></a>
+					</div>
+					<h3 class="coast">1000 тг</h3>
+					<button class="buy-button-hit"><a href="product.html"><h3>Купить</h3></a></button>
+					<button class="loyalty-button"><h3>Карта лояльности</h3></button>
+				</div>
+
+			<div class="hit-product"><a href="product.html"><img src="https://www.veira.net/int/files/29052412415533img" alt="Product 3"></a><div class="name-container">
+						<a href="product.html"><h6>Концентрат для приготовления белкового коктейля «Протеиновый кофе»</h6></a>
+					</div>
+					<h3 class="coast">1000 тг</h3>
+					<button class="buy-button-hit"><a href="product.html"><h3>Купить</h3></a></button>
+					<button class="loyalty-button"><h3>Карта лояльности</h3></button>
+				</div>
+
+	</div>
+
+
+
+	<div class="attention-container">
+		<div class="new">
+			<h1>Обратите внимание!</h1>
+		</div>
+		<div class="attention-element">
+			<p>Здесь текст про что то важное...</p><img src="https://marketplace.canva.com/EAEe2vtE-Cs/1/0/1600w/canva-%D0%BF%D1%83%D1%82%D0%B5%D1%88%D0%B5%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5-%D1%82%D0%B5%D0%BA%D1%81%D1%82-%D0%BA%D0%B8%D1%81%D1%82%D1%8C%D1%8E-%D1%84%D0%BE%D1%82%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D1%8F-facebook-%D0%BE%D0%B1%D0%BB%D0%BE%D0%B6%D0%BA%D0%B0-GYo0pGnijBg.jpg">
+		</div>
+
+		<div class="attention-element">
+			<p>Здесь текст про что то важное...</p><img src="https://marketplace.canva.com/EAEe2vtE-Cs/1/0/1600w/canva-%D0%BF%D1%83%D1%82%D0%B5%D1%88%D0%B5%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5-%D1%82%D0%B5%D0%BA%D1%81%D1%82-%D0%BA%D0%B8%D1%81%D1%82%D1%8C%D1%8E-%D1%84%D0%BE%D1%82%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D1%8F-facebook-%D0%BE%D0%B1%D0%BB%D0%BE%D0%B6%D0%BA%D0%B0-GYo0pGnijBg.jpg">
+		</div>
+
+		<div class="attention-element">
+			<p>Здесь текст про что то важное...</p><img src="https://marketplace.canva.com/EAEe2vtE-Cs/1/0/1600w/canva-%D0%BF%D1%83%D1%82%D0%B5%D1%88%D0%B5%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5-%D1%82%D0%B5%D0%BA%D1%81%D1%82-%D0%BA%D0%B8%D1%81%D1%82%D1%8C%D1%8E-%D1%84%D0%BE%D1%82%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D1%8F-facebook-%D0%BE%D0%B1%D0%BB%D0%BE%D0%B6%D0%BA%D0%B0-GYo0pGnijBg.jpg">
+		</div>
+
+		<div class="trigger-6"></div>
+
+	</div>
+
+	<div class="catalog-container">
+		<div class="trigger-7"></div>
+		<img src="images/catalog.png" class="catalog-image">
+		<h2 class="catalog-title">Каталог</h2>
+		<button class="buy-button">СМОТРЕТЬ</button>
+		<h2 class="catalog-title">Прайс</h2>
+		<button class="buy-button">СМОТРЕТЬ</button>
+	</div>
+
+
+	<form id="telegramForm" class="telegram-form">
+		<h2>Получите карту лояльности</h2>
+		<input type="input" name="given-name" id="given-name" autocomplete="given-name" maxlength="30" placeholder="Ваше имя">
+		<br>
+		<input type="tel" id="phone" name="phone" required placeholder="Телефон">
+		<br>
+		<br>
+		<button type="submit"><b>ОТПРАВИТЬ</b></button>
+	</form>
+
+
+	<div class="basement">
+
+		<img src="images/logo veira.png">
+
+		<div class="text-area-basement">
+			<p class="number-basement">+7 702 532 8122</p>
+			<p class="adress-basement">​БЦ Деловой Дом​ Проспект Нурсултана Назарбаева, 16​ 115 офис; 1 этаж</p>
+			<div class="navigation-basement">
+				<p class="navigation-text-basement"><a href="#">Главная</a></p>
+				<p class="navigation-text-basement"><a href="#">Наборы</a></p>
+				<p class="navigation-text-basement"><a href="#">С бактериофагами</a></p>
+				<p class="navigation-text-basement"><a href="#">С АСД</a></p>
+				<p class="navigation-text-basement"><a href="#">Гигиена и профилактика</a></p>
+				<p class="navigation-text-basement"><a href="#">Косметика для лица</a></p>
+				<p class="navigation-text-basement"><a href="#">Уход за телом</a></p>
+				<p class="navigation-text-basement"><a href="#">Средства для волос</a></p>
+				<p class="navigation-text-basement"><a href="#">Микробиомное желе</a></p>
+				<p class="navigation-text-basement"><a href="#">Концентраты напитков</a></p>
+				<p class="navigation-text-basement"><a href="#">Витамины и минералы</a></p>
+				<p class="navigation-text-basement"><a href="#">Каши и супы</a></p>
+				<p class="navigation-text-basement"><a href="#">Программа Veira Slim</a></p>
+				<p class="navigation-text-basement"><a href="#">Для дома и сада</a></p>
+				<p class="navigation-text-basement"></p>
+				<p class="navigation-text-basement"><a href="#">О компании</a></p>
+			</div>
+		</div>
+
+	</div>
+
+</div>
+
+
+
+
+</div>
+
+<form id="helloForm" class="hello-form">
+	<div class="close-button" id="closeButton"><img src="images/close-icon.png"></div>
+	<h2>Оставьте контактные данные</h2>
+	<input type="input" name="given-name" id="given-name" autocomplete="given-name" maxlength="30" placeholder="Ваше имя">
+	<br>
+	<input type="tel" id="phone" name="phone" required placeholder="Телефон">
+	<br>
+	<br>
+	<button type="submit"><b>ОТПРАВИТЬ</b></button>
+</form>
+
+
+
+
+<script src="js/promotions-carousel.js"></script>
+<script src="js/carousel-products.js"></script>
+
+<script src="js/menu.js"></script>
+<script src="js/bottom-menu.js"></script>
+
+<script src="js/telegramForm.js"></script>
+
+</body>
+</html>

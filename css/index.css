@@ -1,0 +1,940 @@
+html {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body {
+	background-color: white;
+	width: 100vw;
+	overflow-x: hidden;
+	font-family: Montserrat;
+	text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+}
+
+button {
+    border-radius: 30px;
+}
+
+    .trigger-1
+    {
+        width: 100px;
+        height: 300px;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .trigger-2
+    {
+        width: 100px;
+        height: 300px;
+        position: absolute;
+        z-index: -2;
+        top: 300px;
+    }
+
+    .trigger-3
+    {
+        width: 100px;
+        height: 300px;
+        position: absolute;
+        z-index: -2;
+        top: 600px;
+    }
+
+    .trigger-4
+    {
+        width: 100px;
+        height: 300px;
+        position: absolute;
+        z-index: -2;
+        top: 900px;
+    }
+
+    .trigger-5
+    {
+        width: 100px;
+        height: 300px;
+        position: absolute;
+        z-index: -2;
+        margin-top: 80%;
+    }
+
+    .trigger-6 {
+        width: 100px;
+        height: 500px;
+        position: absolute;
+        z-index: -20;
+        bottom: 0;
+    }
+
+    .trigger-7 {
+        width: 100%;
+        height: 30px;
+    }
+
+
+    .logo
+    {
+        width: 50%;
+        position: fixed;
+        margin-top: 50%;
+    }
+
+
+
+    .spray
+    {
+        width: 50%;
+        position: relative;
+        z-index: 1;
+        margin-top: 5%;
+    }
+
+
+    .colp
+    {
+        width: 25%;
+        position: absolute;
+        z-index: 2;
+    }
+
+    .spray-container
+    {
+        margin-top: 70%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+
+    .main
+    {
+        position: absolute;
+        top: 1500px;
+        width: 100%;
+    }
+
+    .our-phone {
+        width: 100%;
+        text-align: left;
+        color: #008E95;
+    }
+
+    .our-phone h3 {
+        margin-left: 10px;
+    }
+
+     .work-time {
+        width: 70%;
+        text-align: left;
+        color: gray;
+        overflow-wrap: break-word;
+    }
+
+    .work-time p {
+        margin-left: 10px;
+    }
+
+    .about-us {
+        width: 100%;
+        text-align: left;
+        color: #008E95;
+    }
+
+    .about-us a {
+        color: #008E95;
+        text-decoration: none;
+    }
+
+    .about-us p {
+        margin-left: 10px;
+    }
+
+    .new
+    {
+        width: 100%;
+        background-color: #008E95;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .carousel-wrapper
+    {
+        width: 100%;
+    }
+
+    .carousel, .carousel-hits {
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+
+    }
+
+    .carousel-track {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .carousel-item {
+        min-width: 100%;
+        box-sizing: border-box;
+        color: black;
+    }
+
+    .buy-button {
+        background-color: #008E95;
+        color: white;
+        width: 80%;
+        height: 50px;
+        border: none;
+        font-size: 24;
+    }
+
+
+
+    .buy-button h3 {
+        color: white;
+    }
+
+    .loyalty-button {
+        background-color: gray;
+        color: white;
+        width: 80%;
+        height: 50px;
+        border: none;
+        font-size: 24;
+        margin-top: 30px;
+    }
+
+    .coast {
+        color: #008E95;
+    }
+
+    .name-container {
+        overflow-wrap: break-word;
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+        color: gray;
+    }
+
+    .carousel-item img {
+        width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .carousel-nav {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-50%);
+    }
+    .carousel-nav button {
+        background: #008E95;
+        border: none;
+        color: white;
+        font-size: 2rem;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+    }
+
+    .promotions-carousel {
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+        border-radius: 30px;
+    }
+
+    .promotions-track {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+    .promotions-item {
+        min-width: 100%;
+        box-sizing: border-box;
+
+    }
+    .promotions-item img {
+        width: 100%;
+        display: block;
+    }
+    .promotions-item h2 {
+        color: black;
+    }
+    .promotions-nav {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-50%);
+    }
+    .promotions-nav button {
+        background: white;
+        border: none;
+        color: #008E95;
+        font-size: 2rem;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        opacity: 0.5;
+
+    }
+
+    .something-else {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        margin-top: 30px;
+    }
+
+    .something-block {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+
+    .something-block img {
+        width: 100%;
+        height: auto;
+    }
+
+    .something-block p {
+        color: gray;
+    }
+
+    .ref {
+        color: white;
+    }
+
+    .hits {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        margin-top: 100px;
+        white-space: nowrap;
+        color: #008E95;
+
+    }
+
+    .hits-label {
+        font-size: 100px;
+        margin-top: 0;
+        transform: translateX(100%);
+    }
+
+    .hits-2 {
+        display: none;
+    }
+
+     .coast-hits {
+        color: white;
+    }
+
+    .hits-card {
+        width: 100%;
+        height: 30px;
+    }
+
+    .buy-button h3 {
+        color: #008E95;
+    }
+
+    .button-text {
+        color: #008E95;
+    }
+
+    .hits-text {
+        color: white;
+    }
+
+    .attention-container {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin-top: 30px;
+    }
+
+    .attention-element {
+        position: relative;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #008E95;
+        padding: 5px;
+        border-radius: 10px;
+        justify-content: center;
+        overflow: hidden;
+        margin-top: 30px;
+        cursor: pointer;
+    }
+
+    .attention-element img {
+        width: 100%;
+        height: auto;
+        filter: brightness(0.3);
+        z-index: 0;
+        border-radius: 10px;
+    }
+
+    .attention-element p {
+        position: absolute;
+        color: white;
+        z-index: 1;
+        
+    }
+
+    .catalog-container {
+        position: relative;
+        width: 100%;
+        margin-top: 200px;
+        overflow-x: hidden;
+        
+    }
+
+    .catalog-image {
+        width: 70%;
+        height: auto;
+        transform: rotate(-45deg);
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    .catalog-title {
+        color: #008E95;
+        margin-top: 60px;
+    }
+
+    .telegram-form {
+        width: 100%;
+        background-color: #008E95;
+        margin-top: 30px;
+        padding-bottom: 60px;
+        padding-top: 30px;
+        text-align: center;
+    }
+
+    .telegram-form input {
+        width: 70%;
+        height: 50px;
+        margin-top: 30px;
+        border-radius: 30px;
+        border: none;
+        font-size: 24px;
+        color: #008E95;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .telegram-form button {
+        width: 70%;
+        height: 50px;
+        margin-top: 30px;
+        background-color: white;
+        border: none;
+        border-radius: 30px;
+        color: #008E95;
+        font-size: 24px;
+    }
+
+    .telegram-form h2 {
+        width: 70%;
+        overflow-wrap: break-word;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .new-products-container {
+        display: none;
+    }
+
+    .hits-container-desktop {
+        display: flex;
+    }
+
+    .hello-form {
+        width: 100%;
+        background-color: #008E95;
+        margin-top: 30px;
+        padding-bottom: 60px;
+        padding-top: 30px;
+        text-align: center;
+        position: fixed;
+        top: 500%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 30px;
+        -webkit-box-shadow: 4px 4px 21px 20px rgba(34, 60, 80, 0.2);
+        -moz-box-shadow: 4px 4px 21px 20px rgba(34, 60, 80, 0.2);
+        box-shadow: 4px 4px 21px 20px rgba(34, 60, 80, 0.2);
+        transition: top 1s;
+        z-index: 99;
+    }
+
+    .hello-form input {
+        width: 70%;
+        height: 50px;
+        margin-top: 30px;
+        border-radius: 30px;
+        border: none;
+        font-size: 24px;
+        color: #008E95;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-family: Montserrat;
+    }
+
+    .hello-form button {
+        width: 70%;
+        height: 50px;
+        margin-top: 30px;
+        background-color: white;
+        border: none;
+        border-radius: 30px;
+        color: #008E95;
+        font-size: 24px;
+        font-family: Montserrat;
+        cursor: pointer;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hello-form h2 {
+        width: 70%;
+        overflow-wrap: break-word;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .close-button {
+        width: 50px;
+        height: 50px;
+        float: right;
+        margin-top: -50px;
+        background-color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .close-button img {
+        width: 80%;
+        height: 80%;
+    }
+
+    .hits-container-desktop {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .hit-product {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        border-radius: 30px;
+        background-color: #008E95;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .hit-product h6 {
+        color: white;
+    }
+
+    .hit-product h3 {
+        color: white;
+    }
+
+    .buy-button-hit {
+        background-color: white;
+        color: #008E95;
+        width: 80%;
+        height: 50px;
+        border: none;
+        font-size: 24;
+    }
+
+    .buy-button-hit h3 {
+        color: #008E95;
+    }
+
+    .hit-product img {
+        width: 50%;
+        border-radius: 30px;
+    }
+
+    .buy-button h3 {
+        color: white;
+    }
+
+    @media(min-width: 1200px) {
+
+
+        .spray-container
+        {
+            margin-top: 10%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .spray
+        {
+            width: 30%;
+            position: relative;
+            z-index: 1;
+            margin-top: 3%;
+        }
+
+        .colp
+        {
+            width: 15%;
+            position: absolute;
+            z-index: 2;
+        }
+
+        .logo
+        {
+            width: 25%;
+            position: fixed;
+            margin-top: 5%;
+        }
+
+        .carousel
+        {
+            display: none;
+        }
+
+        .promotions-carousel {
+        width: 40%;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+        border-radius: 30px;
+    }
+
+    .something-else {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 60px;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        margin-top: 30px;
+        margin-right: auto;
+        margin-left: auto;
+        justify-content: center;
+    }
+
+    .something-block {
+        width: 45%;
+    }
+
+    .something-block img {
+        border-radius: 30px;
+    }
+
+    .hits-label {
+        font-size: 150px;
+        margin-top: 0;
+        transform: translateX(100%);
+    }
+
+    .attention-container {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+
+        margin-top: 120px;
+    }
+
+    .attention-element {
+        position: relative;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #008E95;
+        padding: 5px;
+        border-radius: 10px;
+        justify-content: center;
+        overflow: hidden;
+        align-content: center;
+        cursor: pointer;
+    }
+
+     .catalog-container {
+        position: relative;
+        width: 100%;
+        margin-top: 120px;
+        overflow-x: hidden;
+        
+    }
+
+    .catalog-image {
+        width: 30%;
+        height: auto;
+        transform: rotate(-45deg);
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+
+    .catalog-container button {
+        width: 50%;
+        
+    }
+
+    .telegram-form input {
+        width: 50%;
+        height: 50px;
+        margin-top: 30px;
+        border-radius: 30px;
+        border: none;
+        font-size: 24px;
+        color: #008E95;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .telegram-form button {
+        width: 50%;
+        height: 50px;
+        margin-top: 30px;
+        background-color: white;
+        border: none;
+        border-radius: 30px;
+        color: #008E95;
+        font-size: 24px;
+    }
+
+    .new-products-container {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .new-product {
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        border-radius: 30px;
+        background-color: #EEEEEE;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .new-product img {
+        width: 50%;
+        border-radius: 30px;
+    }
+
+    .new-product button {
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .buy-button h3 {
+        color: white;
+    }
+
+    .new-product h6 {
+        color: gray;
+    }
+
+    .new-product a {
+        color: white;
+    }
+
+    .hits-container-desktop {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .hit-product {
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        border-radius: 30px;
+        background-color: #008E95;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .hit-product h6 {
+        color: white;
+    }
+
+    .hit-product h3 {
+        color: white;
+    }
+
+    .buy-button-hit {
+        background-color: white;
+        color: #008E95;
+        width: 80%;
+        height: 50px;
+        border: none;
+        font-size: 24;
+    }
+
+    .buy-button-hit h3 {
+        color: #008E95;
+    }
+
+    .hit-product img {
+        width: 50%;
+        border-radius: 30px;
+    }
+
+    .hits {
+        display: none;
+    }
+
+    .hits-2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        margin-top: 100px;
+        white-space: nowrap;
+        color: #008E95;
+
+    }
+
+    .hits-label-2 {
+        font-size: 100px;
+        margin-top: 0;
+    }
+
+    .hello-form {
+        width: 50%;
+        background-color: #008E95;
+        margin-top: 30px;
+        padding-bottom: 60px;
+        padding-top: 30px;
+        text-align: center;
+        position: fixed;
+        top: 500%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 30px;
+        -webkit-box-shadow: 4px 4px 21px 20px rgba(34, 60, 80, 0.2);
+        -moz-box-shadow: 4px 4px 21px 20px rgba(34, 60, 80, 0.2);
+        box-shadow: 4px 4px 21px 20px rgba(34, 60, 80, 0.2);
+        transition: top 1s;
+
+    }
+
+    
+
+    .hello-form input {
+        width: 50%;
+        height: 50px;
+        margin-top: 30px;
+        border-radius: 30px;
+        border: none;
+        font-size: 24px;
+        color: #008E95;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-family: Montserrat;
+    }
+
+    .hello-form button {
+        width: 50%;
+        height: 50px;
+        margin-top: 30px;
+        background-color: white;
+        border: none;
+        border-radius: 30px;
+        color: #008E95;
+        font-size: 24px;
+        font-family: Montserrat;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hello-form h2 {
+        width: 70%;
+        overflow-wrap: break-word;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+
+
+    }
+
+
+
+
+

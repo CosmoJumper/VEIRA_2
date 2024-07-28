@@ -1,0 +1,201 @@
+<!DOCTYPE html> 
+<html lang="ru">
+	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+
+	<script src="js/category-menu-scroll.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/basement.css">
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
+	<link rel="stylesheet" type="text/css" href="css/menu-panel.css">
+	<link rel="stylesheet" type="text/css" href="css/product.css">
+	<link rel="stylesheet" type="text/css" href="css/scrollbar.css">
+
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;900&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/inputmask.min.js"></script>
+
+	<title>Продукт</title>
+	</head>
+	<body>
+		<div class="trigger-1"></div>
+
+		<div class="menu-panel">
+		<img src="images/menu-base.png" class="menu-base" id="menu-base">
+		<a href="index.html"><img src="images/logo veira white.png" class="logo-menu"></a>
+		<img src="images/burger.png" id="button-burger" class="burger-menu">
+		</div>
+
+		<div class="menu-open">
+		<div class="text-area-menu">
+			<p class="navigation-menu-element"><a href="#">С бактериофагами</a></p>
+			<p class="navigation-menu-element"><a href="#">С АСД</a></p>
+			<p class="navigation-menu-element"><a href="#">Гигиена и профилактика</a></p>
+			<p class="navigation-menu-element"><a href="#">Приомин</a></p>
+			<p class="navigation-menu-element"><a href="#">Косметика</a></p>
+			<p class="navigation-menu-element"><a href="#">Функциональные продукты</a></p>
+			<p class="navigation-menu-element"><a href="#">Программа Veira Slim</a></p>
+			<p class="navigation-menu-element"><a href="#">Уход за домом и садом</a></p>
+			<p class="navigation-menu-element"><a href="#">Печатная продукция</a></p>
+			<p class="navigation-menu-element"><a href="#">Наборы</a></p>
+		</div>
+	</div>
+
+		<div class="navigation-panel-bottom">
+		<div>
+		<a href="index.html"><img src="images/icon-home.png" data-page="index" id="icon-home"></a>
+		<a href="catalog.html"><img src="images/icon-find.png" data-page="catalog" id="icon-find"></a>
+		<a href="corzine.html"><img src="images/icon-market.png" data-page="corzine" id="icon-market"></a>
+		<a href="profile.html"><img src="images/icon-cabinet.png" data-page="cabinet" id="icon-cabinet"></a>
+		</div>
+		</div>
+
+		<div>
+		<div class="carousel-wrapper">
+			<div class="carousel">
+				<div class="carousel-track">
+					<div class="carousel-item">
+						<img src="images/bacteriofag.jpg" alt="Product 3">
+					</div>
+					<div class="carousel-item">
+						<img src="images/bacteriofag.jpg" alt="Product 3">
+					</div>
+					<div class="carousel-item">
+						<img src="images/bacteriofag.jpg" alt="Product 3">
+					</div>
+				</div>
+				<div class="carousel-nav">
+					<button class="prev">❮</button>
+					<button class="next">❯</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div>
+		<div class="carousel-wrapper-desktop">
+			<div class="carousel-desktop">
+				<div class="carousel-track">
+					<div class="carousel-item">
+						<img src="images/Slide 16_9 - 1.png" alt="Product 3">
+					</div>
+
+					<div class="carousel-item">
+						<img src="images/Slide 16_9 - 1.png" alt="Product 3">
+					</div>
+
+					<div class="carousel-item">
+						<img src="images/Slide 16_9 - 1.png" alt="Product 3">
+					</div>
+				
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+	<div class="carousel-nav-desktop">
+					<button class="prev-desktop">❮</button>
+					<button class="next-desktop">❯</button>
+				</div>
+
+		<div class="attention">
+			<h5>Бесплатная доставка при покупке оптом!</h5>
+		</div>
+
+	<div class="text-container-1">
+	<h2 class="product-name" id="product-name">Название продукта</h2>
+	<p class="article" id="article">Артикул: 12345678</p>
+	<p class="volume" id="volume">Обьем: 200мл</p>
+	<b><p class="price" id="price">Цена: 2000 тг</p></b>
+	<p class="score" id="score">Баллы: 10.0</p>
+	<br>
+	<p class="short-sub" id="short-sub">Краткое описание продукта, его действия и так далее</p>
+	</div>
+
+	<a href="order.html"><button class="buy-button"><b>КУПИТЬ</b></button></a>
+	<button class="cart-button"><b>В КОРЗИНУ</b></button>
+
+	<div class="description-container"><p class="description">Распыление cпрея формирует облако мельчайших частиц влаги, насыщенных биоактивными веществами.
+Бактериофаги находят чужеродные, потенциально опасные бактерии и существенно уменьшают их численность, одновременно осаждая взвесь пыли со всеми ее составляющими. </p>
+
+<img src="images/4aaffd1e6514fe9f954952298efa38b3.jpg">
+
+<p>Спрей обладает широким спектром антибактериальной защиты от вредоносных  бактерий:
+
+Восстанавливает естественную микрофлору кожи лица и тела  после контакта с активными моющими средствами.
+Обеспечивает облегчение дыхания и улучшение самочувствия в замкнутом пространстве, особенно с системой централизованного кондиционирования.
+Снижает риск возникновения и распространения бактериальных и вирусных заболеваний.
+Увлажняет воздух, особенно в отопительный сезон.
+Снимает сухость и першение в горле.
+Облегчает состояние при сезонных аллергических реакциях (например, на цветение).</p></div>
+
+<div class="video-container">
+	<iframe src="https://www.youtube.com/embed/AzgLWl6c0F0?si=WXb9RstRJJhDGKSe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+	<div class="comments-container" id="comments-container">
+		<div class="comment" id="comment"><div class="profile-container"><div class="avatar"><img src="https://img.freepik.com/free-photo/smiley-man-relaxing-outdoors_23-2148739334.jpg"></div><h3>Александр</h3></div><p>Это один из самых лучших продуктов которые я когда либо покупал! Действие просто волшебное!</p></div>
+	</div>
+
+	<h2 class="with-this">C этим часто берут</h2>
+
+	<div class="other-products">
+		<div class="other-product"><img src="images/bacteriofag.jpg"><h3>Название продукта</h3><p class="short-description">Короткое описание продукта и его свойств</p><button class="other-more-button">ПОДРОБНЕЕ</button></div>
+
+		<div class="other-product"><img src="images/bacteriofag.jpg"><h3>Название продукта</h3><p class="short-description">Короткое описание продукта и его свойств</p><button class="other-more-button">ПОДРОБНЕЕ</button></div>
+
+		<div class="other-product"><img src="images/bacteriofag.jpg"><h3>Название продукта</h3><p class="short-description">Короткое описание продукта и его свойств</p><button class="other-more-button">ПОДРОБНЕЕ</button></div>
+
+		<div class="other-product"><img src="images/bacteriofag.jpg"><h3>Название продукта</h3><p class="short-description">Короткое описание продукта и его свойств</p><button class="other-more-button">ПОДРОБНЕЕ</button></div>
+		<div class="other-product"><img src="images/bacteriofag.jpg"><h3>Название продукта</h3><p class="short-description">Короткое описание продукта и его свойств</p><button class="other-more-button">ПОДРОБНЕЕ</button></div>
+	</div>
+
+	
+
+	<div class="basement">
+
+					<img src="images/logo veira.png">
+
+					<div class="text-area-basement">
+						<p class="number-basement">+7 702 532 8122</p>
+						<p class="adress-basement">​БЦ Деловой Дом​ Проспект Нурсултана Назарбаева, 16​ 115 офис; 1 этаж</p>
+						<div class="navigation-basement">
+							<p class="navigation-text-basement"><a href="#">Главная</a></p>
+							<p class="navigation-text-basement"><a href="#">Наборы</a></p>
+							<p class="navigation-text-basement"><a href="#">С бактериофагами</a></p>
+							<p class="navigation-text-basement"><a href="#">С АСД</a></p>
+							<p class="navigation-text-basement"><a href="#">Гигиена и профилактика</a></p>
+							<p class="navigation-text-basement"><a href="#">Косметика для лица</a></p>
+							<p class="navigation-text-basement"><a href="#">Уход за телом</a></p>
+							<p class="navigation-text-basement"><a href="#">Средства для волос</a></p>
+							<p class="navigation-text-basement"><a href="#">Микробиомное желе</a></p>
+							<p class="navigation-text-basement"><a href="#">Концентраты напитков</a></p>
+							<p class="navigation-text-basement"><a href="#">Витамины и минералы</a></p>
+							<p class="navigation-text-basement"><a href="#">Каши и супы</a></p>
+							<p class="navigation-text-basement"><a href="#">Программа Veira Slim</a></p>
+							<p class="navigation-text-basement"><a href="#">Для дома и сада</a></p>
+							<p class="navigation-text-basement"></p>
+							<p class="navigation-text-basement"><a href="#">О компании</a></p>
+						</div>
+					</div>
+
+				</div>
+
+		<script src="js/carousel-products.js"></script>
+		<script src="js/menu.js"></script>
+	</body>
+	</html>

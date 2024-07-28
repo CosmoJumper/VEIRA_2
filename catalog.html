@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/basement.css">
+	<link rel="stylesheet" type="text/css" href="css/menu-panel.css">
+	<link rel="stylesheet" type="text/css" href="css/catalog.css">
+	<link rel="stylesheet" type="text/css" href="css/scrollbar.css">
+
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;900&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/inputmask.min.js"></script>
+
+	<title>Поиск</title>
+	</head>
+	<body>
+
+		<div class="navigation-panel-bottom">
+		<div>
+		<a href="index.html"><img src="images/icon-home.png" data-page="index" id="icon-home"></a>
+		<a href="catalog.html"><img src="images/icon-find.png" data-page="catalog" id="icon-find"></a>
+		<a href="corzine.html"><img src="images/icon-market.png" data-page="corzine" id="icon-market"></a>
+		<a href="profile.html"><img src="images/icon-cabinet.png" data-page="cabinet" id="icon-cabinet"></a>
+		</div>
+		</div>
+
+		<div class="find-container">
+			<h2>НАЙДИТЕ НУЖНЫЙ ПРОДУКТ</h2>
+			<form id="findForm" class="find-form">
+				<input type="text" id="find" name="find" required placeholder="Поиск">
+				<button type="submit"><b>ПОИСК</b></button>
+			</form>
+		</div>
+
+		<div class="categories-container">
+			<h2>КАТЕГОРИИ</h2>
+			<div class="category">
+			
+			<div class="category-image-container"><img src="images/bacteriofag.png"></div>
+			<div class="text-container">
+			<h3>Бактериофаги</h3>
+			<p>Универсальные спреи VEIRA с бактериофагами</p>
+			<a href="category.html"><button>ПОДРОБНЕЕ</button></a>
+			</div>
+			</div>
+
+			<div class="category">
+			<div class="text-container">
+			<h3>С АСД</h3>
+			<p>Оздоровительное воздействие при лечении острых респираторных заболеваний и вирусов</p>
+			<button>ПОДРОБНЕЕ</button>
+			</div>
+			<div class="category-image-container"><img src="images/asd.png"></div>
+			</div>
+
+			<div class="category">
+			
+			<div class="category-image-container"><img src="images/gigiena.png"></div>
+			<div class="text-container">
+			<h3>Гигиена и профилактика</h3>
+			<p>Товары для гигиены и профилактики</p>
+			<button>ПОДРОБНЕЕ</button>
+			</div>
+			</div>
+
+			<div class="category">
+			<div class="text-container">
+			<h3>С приомином</h3>
+			<p>Товары VEIRA с приомином</p>
+			<button>ПОДРОБНЕЕ</button>
+			</div>
+			<div class="category-image-container"><img src="images/priomin.png"></div>
+			</div>
+
+			<div class="category">
+			
+			<div class="category-image-container"><img src="images/volos.png"></div>
+			<div class="text-container">
+			<h3>Косметика для волос</h3>
+			<p>Косметика VEIRA для волос</p>
+			<button>ПОДРОБНЕЕ</button>
+			</div>
+			</div>
+
+			<div class="category">
+			<div class="text-container">
+			<h3>Косметика для лица</h3>
+			<p>Косметика VEIRA для лица</p>
+			<button>ПОДРОБНЕЕ</button>
+			</div>
+			<div class="category-image-container"><img src="images/face.png"></div>
+			</div>
+
+			<div class="category">
+			
+			<div class="category-image-container"><img src="images/body.png"></div>
+			<div class="text-container">
+			<h3>Косметика для тела</h3>
+			<p>Косметика VEIRA для тела</p>
+			<button>ПОДРОБНЕЕ</button>
+			</div>
+			</div>
+
+			<div class="category">
+			<div class="text-container">
+			<h3>Желе</h3>
+			<p>Микробиомное желе VEIRA</p>
+			<button>ПОДРОБНЕЕ</button>
+			</div>
+			<div class="category-image-container"><img src="images/jelly.png"></div>
+			</div>
+
+			<div class="category">
+			
+			<div class="category-image-container"><img src="images/concentrat.png"></div>
+			<div class="text-container">
+			<h3>Концентраты напитков</h3>
+			<p>Концентраты напитков VEIRA</p>
+			<button>ПОДРОБНЕЕ</button>
+			</div>
+			</div>
+
+			<div class="category">
+			<div class="text-container">
+			<h3>Витамины и минералы</h3>
+			<p>Витамины и минералы VEIRA</p>
+			<button>ПОДРОБНЕЕ</button>
+			</div>
+			<div class="category-image-container"><img src="images/vitamines.png"></div>
+			</div>
+
+			<div class="category">
+			
+			<div class="category-image-container"><img src="images/supes.png"></div>
+			<div class="text-container">
+			<h3>Каши и супы</h3>
+			<p>Каши и супы VEIRA</p>
+			<button>ПОДРОБНЕЕ</button>
+			</div>
+			</div>
+
+			<div class="category">
+			<div class="text-container">
+			<h3>Программа Veira Slim</h3>
+			<p>Программа для похудения от VEIRA</p>
+			<button>ПОДРОБНЕЕ</button>
+			</div>
+			<div class="category-image-container"><img src="images/slim.png"></div>
+			</div>
+
+			<div class="category">
+			
+			<div class="category-image-container"><img src="images/05032412060433img.png"></div>
+			<div class="text-container">
+			<h3>Уход за домом и садом</h3>
+			<p>Товары VEIRA для ухода за домом и садом</p>
+			<button>ПОДРОБНЕЕ</button>
+			</div>
+			</div>
+
+			<div class="category">
+			<div class="text-container">
+			<h3>Печатная продукция</h3>
+			<p>Печатная продукция VEIRA</p>
+			<button>ПОДРОБНЕЕ</button>
+			</div>
+			<div class="category-image-container"><img src="images/16092216260217img.png"></div>
+			</div>
+
+			<div class="category">
+			
+			<div class="category-image-container"><img src="images/22042413074533img.png"></div>
+			<div class="text-container">
+			<h3>Наборы</h3>
+			<p>Наборы товаров для профилактики VEIRA</p>
+			<button>ПОДРОБНЕЕ</button>
+			</div>
+			</div>
+
+
+		</div>
+
+		<div class="basement">
+
+					<img src="images/logo veira.png">
+
+					<div class="text-area-basement">
+						<p class="number-basement">+7 702 532 8122</p>
+						<p class="adress-basement">​БЦ Деловой Дом​ Проспект Нурсултана Назарбаева, 16​ 115 офис; 1 этаж</p>
+						<div class="navigation-basement">
+							<p class="navigation-text-basement"><a href="#">Главная</a></p>
+							<p class="navigation-text-basement"><a href="#">Наборы</a></p>
+							<p class="navigation-text-basement"><a href="#">С бактериофагами</a></p>
+							<p class="navigation-text-basement"><a href="#">С АСД</a></p>
+							<p class="navigation-text-basement"><a href="#">Гигиена и профилактика</a></p>
+							<p class="navigation-text-basement"><a href="#">Косметика для лица</a></p>
+							<p class="navigation-text-basement"><a href="#">Уход за телом</a></p>
+							<p class="navigation-text-basement"><a href="#">Средства для волос</a></p>
+							<p class="navigation-text-basement"><a href="#">Микробиомное желе</a></p>
+							<p class="navigation-text-basement"><a href="#">Концентраты напитков</a></p>
+							<p class="navigation-text-basement"><a href="#">Витамины и минералы</a></p>
+							<p class="navigation-text-basement"><a href="#">Каши и супы</a></p>
+							<p class="navigation-text-basement"><a href="#">Программа Veira Slim</a></p>
+							<p class="navigation-text-basement"><a href="#">Для дома и сада</a></p>
+							<p class="navigation-text-basement"></p>
+							<p class="navigation-text-basement"><a href="#">О компании</a></p>
+						</div>
+					</div>
+		</div>
+
+		<script src="js/bottom-menu.js"></script>
+	</body>
+</html>

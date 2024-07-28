@@ -1,0 +1,220 @@
+html { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body {
+	background-color: white;
+	width: 100vw;
+	overflow-x: hidden;
+	font-family: Montserrat;
+	text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.trigger-1
+    {
+        width: 100px;
+        height: 300px;
+        position: absolute;
+        z-index: -1;
+    }
+
+.profile-photo {
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 30px;
+}
+
+.profile-photo img {
+	width: 100%;
+}
+
+.parameters {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 30px;
+	margin-top: 30px;
+}
+
+.parameter {
+	width: 80%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+	word-wrap: break-word;
+	gap: 30px;
+	border-radius: 30px;
+	-webkit-box-shadow: 4px 4px 19px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 4px 4px 19px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 4px 4px 19px 0px rgba(34, 60, 80, 0.2);
+	background-color: #EEEEEE;
+}
+
+.parameter h1 {
+	color: #008E95;
+}
+
+.parameter p {
+	color: #008E95;
+}
+
+.parameter img {
+	height: 30px;
+}
+
+.option-and-edit {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 15px;
+}
+
+.score-container {
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	color: white;
+	-webkit-box-shadow: 4px 4px 19px 0px rgba(34, 60, 80, 0.2) inset;
+    -moz-box-shadow: 4px 4px 19px 0px rgba(34, 60, 80, 0.2) inset;
+    box-shadow: 4px 4px 19px 0px rgba(34, 60, 80, 0.2) inset;
+	background-color: #008E95;
+	margin-top: 30px;
+	border-radius: 30px;
+}
+
+.score-container h1 {
+	font-size: 120px;
+}
+
+.new
+    {
+        width: 100%;
+        background-color: #008E95;
+        font-family: 'Montserrat', sans-serif;
+        margin-top: 30px;
+    }
+
+.promotions-carousel {
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+        margin-top: 30px;
+    }
+
+    .promotions-track {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+    .promotions-item {
+        min-width: 100%;
+        box-sizing: border-box;
+
+    }
+    .promotions-item img {
+        width: 100%;
+        display: block;
+    }
+    .promotions-item h2 {
+        color: black;
+    }
+    .promotions-nav {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-50%);
+    }
+    .promotions-nav button {
+        background: rgba(0, 0, 0, 0.5);
+        border: none;
+        color: white;
+        font-size: 2rem;
+        cursor: pointer;
+
+    }
+
+    .buttons-container {
+    	width: 80%;
+    	display: flex;
+    	flex-direction: column;
+    	gap: 30px;
+    	margin-top: 30px;
+    }
+
+    .orders-button {
+    	background-color: #008E95;
+    	color: white;
+    	border: none;
+    	width: 100%;
+    	height: 60px;
+    	border-radius: 60px;
+    }
+
+     .partner-button {
+    	background-color: white;
+    	color: #008E95;
+    	border: 3px solid #008E95;
+    	width: 100%;
+    	height: 60px;
+    	border-radius: 60px;
+    }
+
+    @media(min-width: 1200px) {
+        .parameters {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.score-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    -webkit-box-shadow: 4px 4px 19px 0px rgba(34, 60, 80, 0.2) inset;
+    -moz-box-shadow: 4px 4px 19px 0px rgba(34, 60, 80, 0.2) inset;
+    box-shadow: 4px 4px 19px 0px rgba(34, 60, 80, 0.2) inset;
+    background-color: #008E95;
+    margin-top: 30px;
+    border-radius: 30px;
+}
+
+.buttons-container {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 30px;
+    }
+
+    .promotions-carousel {
+        width: 50%;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+        margin-top: 30px;
+        border-radius: 30px;
+    }
+
+    }

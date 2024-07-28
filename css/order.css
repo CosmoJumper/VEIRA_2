@@ -1,0 +1,254 @@
+html {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body {
+	background-color: white;
+	width: 100vw;
+	overflow-x: hidden;
+	font-family: Montserrat;
+	text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+button {
+    border-radius: 30px;
+}
+
+h1 {
+    color: #008E95;
+    margin-top: 60px;
+}
+
+.trigger-1 {
+    position: absolute;
+    height: 300px;
+    width: 100px;
+    top: 0;
+}
+
+.order-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.order-form h3 {
+    color: #008E95;
+    margin-top: 30px;
+}
+
+.order-button {
+    margin-top: 60px;
+    border: none;
+    width: 80%;
+    background-color: #008E95;
+    color: white;
+    font-size: 24px;
+    height: 60px;
+}
+
+.products-container {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product {
+    background-color: #EEEEEE;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 30px;
+    -webkit-box-shadow: 4px 4px 19px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 4px 4px 19px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 4px 4px 19px 0px rgba(34, 60, 80, 0.2);
+}
+
+.product-name {
+    color: black;
+    margin-left: 20px;
+    margin-right: 10px;
+    text-align: left;
+}
+
+.q {
+    color: gray;
+    margin-right: 10px;
+}
+
+.delete-product {
+    color: #008E95;
+    margin-right: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.receiving-label {
+    margin-bottom: 30px;
+}
+
+.receiving-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.receiving-container p {
+    color: black;
+    margin-left: 10px;
+}
+
+.delivery-form, .contact-form {
+    width: 80%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-form {
+    display: none;
+}
+
+.delivery-form label, .contact-form label {
+    color: gray;
+}
+
+.delivery-form input, .contact-form input {
+    width: 100%;
+    height: 60px;
+    border-radius: 100px;
+    border-color: #008E95;
+    -webkit-box-shadow: 4px 4px 19px 0px rgba(34, 60, 80, 0.2) inset;
+    -moz-box-shadow: 4px 4px 19px 0px rgba(34, 60, 80, 0.2) inset;
+    box-shadow: 4px 4px 19px 0px rgba(34, 60, 80, 0.2) inset;
+    font-size: 24px;
+    font-family: Montserrat;
+    text-align: center;
+    color: #008E95;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.pay-type-container {
+    width: 90%;
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.online-pay {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: #008E95;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0;
+    border: none;
+    opacity: 1;
+    transition: opacity 1s;
+    pointer-events: all;
+}
+
+.online-pay img {
+    height: 50px;
+}
+
+.offline-pay {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: none;
+    flex-direction: column;
+    align-content: center;
+    background-color: #008E95;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0;
+    border: none;
+    opacity: 0.1;
+    transition: opacity 1s;
+    pointer-events: all;
+}
+
+.radio-button.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.offline-pay img {
+    height: 50px;
+}
+
+
+.online-pay-p {
+    color: white;
+}
+
+.offline-pay-p {
+    color: white;
+}
+
+.contact-form {
+    display: none;
+}
+
+@media(min-width: 1200px) {
+    .delivery-form input, .contact-form input {
+    width: 50%;
+    height: 60px;
+    border-radius: 100px;
+    border-color: #008E95;
+    -webkit-box-shadow: 4px 4px 19px 0px rgba(34, 60, 80, 0.2) inset;
+    -moz-box-shadow: 4px 4px 19px 0px rgba(34, 60, 80, 0.2) inset;
+    box-shadow: 4px 4px 19px 0px rgba(34, 60, 80, 0.2) inset;
+    font-size: 24px;
+    font-family: Montserrat;
+    text-align: center;
+    color: #008E95;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+.pay-type-container {
+    width: 50%;
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.order-button {
+    margin-top: 60px;
+    border: none;
+    width: 50%;
+    background-color: #008E95;
+    color: white;
+    font-size: 24px;
+    height: 60px;
+}
+}
+
+
+
+
